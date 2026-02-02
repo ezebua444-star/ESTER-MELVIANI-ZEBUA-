@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giat Belajar - Ester Melviani Zebua</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --pink-dark: #d63384;
+            --pink-medium: #f687b3;
+            --pink-light: #fbcfe8;
+            --pink-soft: #fff1f2;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--pink-soft);
+            color: #4d002b;
+        }
+
+        /* Navigasi Pink */
+        .navbar {
+            background-color: #ffffff !important;
+            border-bottom: 3px solid var(--pink-light);
+        }
+        .navbar-brand, .nav-link {
+            color: var(--pink-dark) !important;
+            font-weight: 700;
+        }
+        .nav-link:hover {
+            color: var(--pink-medium) !important;
+        }
+
+        /* Header Hero */
+        header {
+            background: linear-gradient(135deg, var(--pink-dark), var(--pink-medium));
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        /* Profile Card */
+        .main-card {
+            background: white;
+            border-radius: 30px;
+            box-shadow: 0 10px 25px rgba(214, 51, 132, 0.2);
+            margin-top: -60px;
+            padding: 40px;
+            border: 2px solid var(--pink-light);
+        }
+
+        /* Tempat Foto */
+        .photo-frame {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 20px;
+            border: 6px solid var(--pink-light);
+            border-radius: 20px;
+            overflow: hidden;
+            background-color: #fce7f3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Motivasi Box */
+        .motivation-box {
+            background-color: var(--pink-soft);
+            border: 2px dashed var(--pink-dark);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .motivation-text {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--pink-dark);
+            font-weight: 600;
+        }
+
+        /* Kurikulum List */
+        .list-pink li {
+            background-color: white;
+            border-left: 5px solid var(--pink-dark);
+            margin-bottom: 10px;
+            padding: 10px;
+            list-style: none;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Footer Pink */
+        footer {
+            background-color: var(--pink-dark);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+            text-align: center;
+        }
+        footer a {
+            color: var(--pink-light);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">💖 GIAT BELAJAR</a>
+            <button class="navbar-toggler border-pink" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kurikulum">Kurikulum</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Ester Melviani Zebua</h1>
+            <p class="lead">"Masa depan adalah milik mereka yang percaya pada keindahan mimpi mereka."</p>
+        </div>
+    </header>
+
+    <div class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="main-card">
+                    <div class="row align-items-center">
+                        
+                        <div class="col-md-5 text-center mb-4 mb-md-0">
+                            <div class="photo-frame">
+                                <img src="https://via.placeholder.com/200x200?text=Foto+Ester" alt="Foto Ester Melviani Zebua">
+                            </div>
+                            <span class="badge bg-danger px-3 py-2 rounded-pill">XII TKJ 1</span>
+                        </div>
+
+                        <div class="col-md-7" id="about">
+                            <h2 class="fw-bold mb-3" style="color: var(--pink-dark);">Biodata Diri</h2>
+                      nama: ester melviani zebua   <p><strong>Sekolah:</strong> SMK Negeri 3 Gunung Sitoli</p>
+                    kelas :xll tkj 1 <p><strong>Tanggal Lahir:</strong> 28 Mei 2007</p>
+                            
+                            <div class="motivation-box text-center shadow-sm">
+                                <p class="motivation-text">
+                                    "Giatlah belajar hari ini, agar saldo rekeningmu di masa depan terlihat seperti nomor telepon!"
+                                </p>
+                                <small class="fw-bold">— Semangat, Ester!</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-5" style="border-top: 2px solid var(--pink-light);">
+
+                    <div id="kurikulum">
+                        <h3 class="fw-bold mb-4 text-center" style="color: var(--pink-dark);">Fokus Pembelajaran</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-pink p-0">
+                                    <li>Administrasi Jaringan</li>
+                                    <li>Teknologi Layanan Jaringan</li>
+                                    <li>Keamanan Jaringan</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-pink p-0">
+                                    <li>Pemrograman Dasar</li>
+                                    <li>Desain Grafis</li>
+                                    <li>Produk Kreatif & Kewirausahaan</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="container">
+            <p class="mb-1 fw-bold">© 2026 Ester Melviani Zebua</p>
+            <p class="small mb-3">SMK Negeri 3 Gunung Sitoli | Teknik Komputer & Jaringan</p>
+            <div class="social-links">
+                <p>Follow My Journey: <a href="#">@estermelviani</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+  </html>
